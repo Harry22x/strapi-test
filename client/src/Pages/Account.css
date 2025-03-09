@@ -1,0 +1,83 @@
+.account-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    background: linear-gradient(135deg, #000000 0%, #0f0e3d 100%);
+}
+
+.account-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.account-subheading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.account-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.account-event-list {
+    display: flex;
+    flex-direction: column; /* Make items appear in a column */
+    gap: 20px;
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start;
+}
+
+.account-ticket-info {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.account-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #ececec;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.account-box-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px; /* Add margin to separate text and image */
+}
+
+.account-box-image {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}

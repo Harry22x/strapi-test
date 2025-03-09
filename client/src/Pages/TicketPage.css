@@ -1,0 +1,54 @@
+.ticket-page-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+}
+
+.ticket-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.ticket-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ticket-date-time {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.ticket-description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.ticket-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.buy-ticket-btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-ticket-btn:hover {
+  background-color: #e60073;
+}

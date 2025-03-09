@@ -1,0 +1,106 @@
+/* Navbar.css */
+:root {
+  --bg: #282c34; /* Background color */
+  --header: #fff;
+  --link: #61dafb;
+  --text: hsla(0, 0%, 100%, 0.88);
+  --primary: #f5167e;
+  --text-dark: #ffffff;
+}
+
+.header {
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0; /* Sticks to the very top */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px; /* Reduce padding to make it smaller */
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #000000 0%, #0f0e3d 100%);
+
+}
+
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.logo-text {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 29px;
+  color: var(--text-dark); /* Using the same color from LandingPage */
+}
+
+.logo-text-bold {
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.logo-text-regular {
+  font-weight: 400;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-link {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.login-btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: var(--text-dark);
+  padding: 10px 20px;
+  border: 1.5px solid var(--text-dark); /* Matching with the text color */
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+.sign-btn{
+  background-color: #f3f4f6;
+  padding: 0.75rem 1.55rem;
+  border-radius: 75rem;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  font-size: 0.99rem;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Additional responsive styling if needed for Navbar */
+@media (max-width: 991px) {
+  .header {
+    padding: 24px 20px;
+  }
+  .nav {
+    display: none; /* Hide the nav on smaller screens */
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 16px;
+  }
+}

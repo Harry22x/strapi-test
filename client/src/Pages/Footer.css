@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+.footer {
+  display: flex;
+  font-family: "DM Sans", sans-serif;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer-main {
+  background-color: rgb(10, 7, 95); 
+  display: flex;
+  width: 100%;
+  padding: 56px 80px 21px;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  flex-wrap: wrap;
+
+}
+
+.footer-brand {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand-logo {
+  display: flex;
+  gap: 9px;
+  font-size: 29px;
+  color: white;
+  font-weight: 700;
+}
+
+.logo-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 34px;
+  align-self: flex-start;
+  
+}
+
+.brand-name-bold {
+  font-weight: 800;
+}
+
+.brand-name-regular {
+  font-weight: 400;
+}
+
+.brand-description {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 17px;
+  max-width: 380px;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 17px;
+  gap: 16px;
+}
+
+.social-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 36px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.footer-nav-section {
+  margin-top: 4px;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.footer-nav {
+  gap: 20px;
+  display: flex;
+}
+
+.nav-column {
+  display: flex;
+  flex-direction: column;
+  width: 19%;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 24px;
+  color:white
+}
+
+.navfoot-links{
+  text-decoration: none;
+  color: white;
+}
+
+.newsletter-column {
+  display: flex;
+  flex-direction: column;
+  width: 81%;
+  margin-left: 20px;
+}
+
+.newsletter-description {
+  color: white;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 24px;
+}
+
+.newsletter-form {
+  border-radius: 46px;
+  background-color: #fff;
+  border: 2px solid #f1f1f1;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  padding: 8px 7px 8px 26px;
+  gap: 38px;
+  font-size: 12px;
+}
+
+.email-input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+}
+
+.subscribe-butn{
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(245, 22, 126);
+  color: white;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+}
+
+.footer-divider {
+  border-top: 1px solid rgb(76, 77, 139);
+  margin-top: 68px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.copyright {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: 15px;
+  text-align: center;
+}
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+}
+
+.contact-textarea {
+  height: 80px;
+  resize: none;
+}
+
+.submit-button {
+  background-color: rgb(245, 22, 126);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .nav-column {
+    width: 100%;
+  }
+
+  .newsletter-column {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .subscribe-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-main {
+    padding: 30px 15px;
+  }
+
+  .brand-description {
+    font-size: 13px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icon {
+    width: 32px;
+  }
+
+  .footer-divider {
+    margin-top: 40px;
+  }
+}

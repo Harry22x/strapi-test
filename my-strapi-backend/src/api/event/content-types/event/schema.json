@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "time"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "location": {
+      "type": "string"
+    },
+    "user_events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-event.user-event",
+      "mappedBy": "event"
+    },
+    "event_tickets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event-ticket.event-ticket",
+      "mappedBy": "event"
+    }
+  }
+}

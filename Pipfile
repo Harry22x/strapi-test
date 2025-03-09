@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sqlalchemy-serializer = "*"
+flask = "*"
+flask-sqlalchemy = "3.0.3"
+Werkzeug = "2.2.2"
+flask-migrate = "*"
+flask-restful = "*"
+flask-cors = "*"
+faker = "*"
+flask-bcrypt = "*"
+requests = "*"
+cloudinary = "*"
+flask-jwt-extended = "*"
+google-api-python-client = "*"
+google-auth-httplib2 = "*"
+google-auth-oauthlib = "*"
+dotenv = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+pytest = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

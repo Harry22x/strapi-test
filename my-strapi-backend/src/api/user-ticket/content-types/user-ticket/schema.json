@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_tickets",
+  "info": {
+    "singularName": "user-ticket",
+    "pluralName": "user-tickets",
+    "displayName": "user_ticket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "user_tickets"
+    },
+    "event_ticket": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event-ticket.event-ticket",
+      "inversedBy": "user_tickets"
+    },
+    "ticket_quantity": {
+      "type": "integer"
+    }
+  }
+}

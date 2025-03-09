@@ -1,0 +1,195 @@
+/* Container and Section Styling */
+section {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1e0749;
+}
+
+/* Event Card Styling */
+.bg-white {
+  background-color: #ffffff;
+  padding: 1rem; /* Reduced padding to make the card more compact */
+  box-shadow: 0 4px 6px rgba(163, 20, 20, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-white:hover {
+  /* transform: translateY(-10px); */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-auto {
+  max-height: 200px; /* Adjust as needed */
+  height: auto;
+}
+
+.object-contain {
+  object-fit: contain; /* Ensures the whole image is contained without cutting off */
+  width: 100%;
+  height: auto;
+}
+
+.mb-4 {
+  margin-bottom: 0.75rem; /* Reduced margin to pull the content closer */
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.text-sm {
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+
+}
+
+/* Grid Layout for Event Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  font-family: "DM Sans", sans-serif;
+}
+/* Filter Button Styles */
+.filter-btn {
+  background-color: #f3f4f6;
+  padding: 0.75rem 1.55rem;
+  border-radius: 75rem;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  font-size: 0.99rem;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.05);
+}
+.relative {
+  position: relative;
+}
+
+/* Dropdown menu
+.absolute {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  width: max-content;
+  min-width: 120px;
+  padding: 8px 0;
+} */
+
+/* Dropdown links
+.absolute a {
+  display: block;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "DM Sans", sans-serif;
+
+}
+
+.absolute a:hover {
+  background-color: #f1f1f1;
+} */
+.arrow {
+  margin-left: 0.5rem;
+}
+
+/* Positioning the filter buttons to the far right of the header */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.ml-auto {
+  margin-left: auto; /* Pushes buttons to the right */
+}
+
+.space-x-6 {
+  gap: 1.5rem; /* Increased gap to make the buttons less squeezed */
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: #0f0e3d ;
+  font-family: "DM Sans", sans-serif;
+  width: 100%; /* Ensures the title takes up full width */
+  margin-left: 1rem; /* Adjusts the title's position to the left */
+}
+.h-auto {
+  max-height: 200px; /* Adjust as needed */
+  height: auto;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Button Styling */
+/* Button Styling */
+a.bg-blue-500 {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.s ease;
+  margin-top: 20px; 
+  border-radius: 50px;
+  transition: all 0.5s ease; 
+  font-family: "DM Sans", sans-serif;
+
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}

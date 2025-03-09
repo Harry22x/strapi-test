@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_events",
+  "info": {
+    "singularName": "user-event",
+    "pluralName": "user-events",
+    "displayName": "user_event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "user_events"
+    },
+    "event": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event.event",
+      "inversedBy": "user_events"
+    }
+  }
+}

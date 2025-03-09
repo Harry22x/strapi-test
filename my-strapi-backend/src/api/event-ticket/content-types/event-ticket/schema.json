@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_tickets",
+  "info": {
+    "singularName": "event-ticket",
+    "pluralName": "event-tickets",
+    "displayName": "event-ticket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ticket_type": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "available_quantity": {
+      "type": "integer"
+    },
+    "event": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event.event",
+      "inversedBy": "event_tickets"
+    },
+    "user_tickets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-ticket.user-ticket",
+      "mappedBy": "event_ticket"
+    }
+  }
+}
