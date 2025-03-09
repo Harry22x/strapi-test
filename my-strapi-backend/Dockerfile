@@ -2,30 +2,34 @@
 FROM node:18-alpine AS builder
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /app/my-strapi-backend
 
-# Copy only package.json and package-lock.json first (to optimize caching)
-COPY my-strapi-backend/package.json my-strapi-backend/package-lock.json ./
+# Copy package.json and package-lock.json first (for better caching)
+COPY my-strapi-backend/package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the entire project
-COPY . .
+# Copy the rest of the application
+COPY my-strapi-backend ./
 
 # Build Strapi
-RUN cd my-strapi-backend && npm run build
+RUN npm run build
 
-# Use a lightweight Node.js runtime for production
+# Production stage
 FROM node:18-alpine AS runner
 
-WORKDIR /app
+# Set working directory
+WORKDIR /app/my-strapi-backend
 
 # Copy built files from builder stage
-COPY --from=builder /app /app
+COPY --from=builder /app/my-strapi-backend ./
+
+# Set NODE_ENV to production
+ENV NODE_ENV=production
 
 # Expose Strapi's default port
 EXPOSE 1337
 
-# Start Strapi
+# Start Strapi in production mode
 CMD ["npm", "run", "start"]
